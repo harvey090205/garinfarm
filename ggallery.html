@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GarinFarm - Gallery</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        body { display: flex; flex-direction: column; min-height: 100vh; background-color: #f4f4f4; }
+        header { background-color: #2e7d32; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #1b5e20; display: flex; justify-content: center; padding: 10px; }
+        nav a { color: white; text-decoration: none; padding: 10px 20px; font-weight: bold; }
+        nav a:hover { background-color: #4caf50; border-radius: 5px; }
+        .container { display: flex; flex: 1; max-width: 1200px; margin: 20px auto; width: 95%; gap: 20px; }
+        .sidebar { flex: 1; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); height: fit-content; }
+        .sidebar ul { list-style: none; margin-top: 10px; }
+        .sidebar li { padding: 10px 0; border-bottom: 1px solid #eee; }
+        .sidebar a { text-decoration: none; color: #333; display: block; }
+        .sidebar a:hover { color: #2e7d32; font-weight: bold; }
+        main { flex: 3; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        
+        /* Gallery Grid Styles */
+        .gallery-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+            gap: 15px; 
+            margin-top: 20px; 
+        }
+        
+        .gallery-item { 
+            width: 100%;
+            height: 200px; 
+            object-fit: cover; /* Ensures images fill the box without stretching */
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05); /* Zoom effect on hover */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        footer { background-color: #333; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+        @media (max-width: 768px) { .container { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <header><h1>GarinFarm</h1></header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="bprofile.html">Profile</a>
+        <a href="ggallery.html">Gallery</a>
+        <a href="about.html">About</a>
+            </nav>
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bprofile.html">Profile</a></li>
+                <li><a href="ggallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+               
+            </ul>
+        </aside>
+        <main>
+            <h2>Gallery</h2>
+            <p>Explore the beauty of GarinFarm through our photos.</p>
+            
+            <div class="gallery-grid">
+                <!-- Make sure your image file names match exactly or update the src="" -->
+                <img src="cross.jpg" alt="GarinFarm Cross" class="gallery-item">
+                <img src="statue.jpg" alt="Heaven Statue" class="gallery-item">
+                <img src="garden.jpeg" alt="GarinFarm Lake and Birds" class="gallery-item">
+                <img src="zip.jpg" alt="Zipline Experience" class="gallery-item">
+                <img src="pool.jpg" alt="Swimming Pool and Resort" class="gallery-item">
+                <img src="noah.png" alt="Noah's Ark Farm Animals" class="gallery-item">
+            </div>
+            
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2026 GarinFarm, San Joaquin, Iloilo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GarinFarm - Profile</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        body { display: flex; flex-direction: column; min-height: 100vh; background-color: #f4f4f4; }
+        header { background-color: #2e7d32; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #1b5e20; display: flex; justify-content: center; padding: 10px; flex-wrap: wrap; }
+        nav a { color: white; text-decoration: none; padding: 10px 20px; font-weight: bold; }
+        nav a:hover { background-color: #4caf50; border-radius: 5px; }
+        .container { display: flex; flex: 1; max-width: 1200px; margin: 20px auto; width: 95%; gap: 20px; }
+        .sidebar { flex: 1; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); height: fit-content; }
+        .sidebar ul { list-style: none; margin-top: 10px; }
+        .sidebar li { padding: 10px 0; border-bottom: 1px solid #eee; }
+        .sidebar a { text-decoration: none; color: #333; display: block; }
+        .sidebar a:hover { color: #2e7d32; font-weight: bold; }
+        main { flex: 3; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        
+        /* Key Features Grid with Images */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .feature-card {
+            background: #fafafa;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+            border: 1px solid #e0e0e0;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+        .feature-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            display: block;
+            background-color: #ddd; /* fallback while loading */
+        }
+        .feature-card .caption {
+            padding: 14px 12px;
+            text-align: center;
+            font-weight: bold;
+            color: #1b5e20;
+            background: white;
+            border-top: 2px solid #2e7d32;
+        }
+
+        footer { background-color: #333; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+        @media (max-width: 768px) { .container { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <header><h1>GarinFarm</h1></header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="bprofile.html">Profile</a>
+        <a href="ggallery.html">Gallery</a>
+        <a href="about.html">About</a>
+      
+    </nav>
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bprofile.html">Profile</a></li>
+                <li><a href="ggallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                
+            </ul>
+        </aside>
+        <main>
+            <h2>Our Profile</h2>
+            <br>
+            <h3>Who We Are</h3>
+            <p>GarinFarm is a premier agri-tourism destination in San Joaquin, Iloilo. We are dedicated to providing a holistic experience that combines farming, leisure, and spiritual reflection.</p>
+            <br>
+            <h3>Our Mission</h3>
+            <p>To offer a sanctuary where visitors can reconnect with nature, appreciate agriculture, and find peace through our unique spiritual installations.</p>
+            <br>
+            <h3>Key Features</h3>
+<ul>
+	<br>
+		<br>
+    <li>
+        <img src="heaven.jpg" alt="The Journey to Heaven Monument" style="width:100%; max-width:600px; border-radius:8px;">
+        <p><strong>The Journey to Heaven (Religious Monument)</strong> - A 456-step pilgrimage hill featuring biblical scenes leading to a white cross and a "heaven" installation.</p>
+    </li>
+		<br>
+			<br>
+    <li>
+        <img src="animal.jpg" alt="Animal Sanctuary at GarinFarm" style="width:100%; max-width:600px; border-radius:8px;">
+        <p><strong>Animal Sanctuary & Farm</strong> - Home to ducks, rabbits, horses, goats, and other farm animals in a zero-waste environment.</p>
+    </li>
+    <li>
+        <img src="swimming.jpg" alt="Swimming Pool at GarinFarm" style="width:100%; max-width:600px; border-radius:8px;">
+        <p><strong>Swimming Pool & Water Activities</strong> - A wide pool for adults and children, plus kayaking and fishing on a man-made lagoon.</p>
+    </li>
+    <li>
+        <img src="zipline.jpg" alt="Zipline and Horseback Riding" style="width:100%; max-width:600px; border-radius:8px;">
+        <p><strong>Zipline and Horseback Riding</strong> - Adventure activities including a two-way zipline and horseback riding trails.</p>
+    </li>
+</ul>
